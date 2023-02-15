@@ -1,5 +1,7 @@
 "use client";
 
+import { theme } from "@/chakra/theme";
+import { ChakraProvider } from "@chakra-ui/react";
 import AuthContext from "../pages/api/auth/AuthContext";
 
 export default function RootLayout({
@@ -15,7 +17,9 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <AuthContext>{children}</AuthContext>
+        <AuthContext>
+          <ChakraProvider theme={theme}>{children}</ChakraProvider>
+        </AuthContext>
       </body>
     </html>
   );

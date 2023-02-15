@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@chakra-ui/react";
 import { signIn, signOut, useSession } from "next-auth/react";
 export default function Home() {
   const { data } = useSession();
@@ -9,9 +10,13 @@ export default function Home() {
   return (
     <div>
       {data?.user ? (
-        <button onClick={() => signOut()}>Sign Out</button>
+        <Button colorScheme="red" onClick={() => signOut()}>
+          Sign Out
+        </Button>
       ) : (
-        <button onClick={() => signIn("google")}>Sign In</button>
+        <Button colorScheme="blue" onClick={() => signIn("goggle")}>
+          Sign In
+        </Button>
       )}
       {data?.user?.name}
     </div>
