@@ -1,24 +1,20 @@
 "use client";
 
-import { Button } from "@chakra-ui/react";
-import { signIn, signOut, useSession } from "next-auth/react";
-export default function Home() {
+import { Box } from "@chakra-ui/react";
+import { NextPage } from "next";
+import { useSession } from "next-auth/react";
+
+const Home: NextPage = () => {
   const { data } = useSession();
 
   console.log("here is data", data);
 
   return (
-    <div>
-      {data?.user ? (
-        <Button colorScheme="red" onClick={() => signOut()}>
-          Sign Out
-        </Button>
-      ) : (
-        <Button colorScheme="blue" onClick={() => signIn("goggle")}>
-          Sign In
-        </Button>
-      )}
-      {data?.user?.name}
-    </div>
+    <Box>
+      123
+    </Box>
+   
   );
-}
+};
+
+export default Home;
