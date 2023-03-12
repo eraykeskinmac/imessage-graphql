@@ -1,6 +1,8 @@
 "use client";
 
 import { theme } from "@/chakra/theme";
+import { client } from "@/graphql/apollo-client";
+import { ApolloProvider } from "@apollo/client";
 import { ChakraProvider } from "@chakra-ui/react";
 import AuthContext from "../pages/api/auth/AuthContext";
 
@@ -13,9 +15,11 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body>
-        <AuthContext>
-          <ChakraProvider theme={theme}>{children}</ChakraProvider>
-        </AuthContext>
+        <ApolloProvider client={client}>
+          <AuthContext>
+            <ChakraProvider theme={theme}>{children}</ChakraProvider>
+          </AuthContext>
+        </ApolloProvider>
       </body>
     </html>
   );
