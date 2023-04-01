@@ -10,10 +10,10 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@apollo/client@^3.7.10":
-  "integrity" "sha512-/k1MfrqPKYiPNdHcOzdxg9cEx96vhAGxAcSorzfBvV29XtFQcYW2cPNQOTjK/fpSMtqVo8UNmu5vwQAWD1gfCg=="
-  "resolved" "https://registry.npmjs.org/@apollo/client/-/client-3.7.10.tgz"
-  "version" "3.7.10"
+"@apollo/client@^3.7.11":
+  "integrity" "sha512-uLg2KtxoAyj9ta7abLxXx8cGRM7HypCkXVmxtL7Ko//N5g37aoJ3ca7VYoFCMUFO1BXBulj+yKVl0U3+ILj5AQ=="
+  "resolved" "https://registry.npmjs.org/@apollo/client/-/client-3.7.11.tgz"
+  "version" "3.7.11"
   dependencies:
     "@graphql-typed-document-node/core" "^3.1.1"
     "@wry/context" "^0.7.0"
@@ -21,7 +21,7 @@
     "@wry/trie" "^0.3.0"
     "graphql-tag" "^2.12.6"
     "hoist-non-react-statics" "^3.3.2"
-    "optimism" "^0.16.1"
+    "optimism" "^0.16.2"
     "prop-types" "^15.7.2"
     "response-iterator" "^0.2.6"
     "symbol-observable" "^4.0.0"
@@ -187,7 +187,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.18.6"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.3", "@babel/runtime@^7.18.3", "@babel/runtime@^7.20.7":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.18.3", "@babel/runtime@^7.20.13", "@babel/runtime@^7.20.7":
   "integrity" "sha512-gt3PKXs0DBoL9xCvOIIZ2NEqAGZqHjAnmVbfQtB620V0uReIQutpel14KcneZuer7UioY8ALKZ7iocavvzTNFA=="
   "resolved" "https://registry.npmjs.org/@babel/runtime/-/runtime-7.20.13.tgz"
   "version" "7.20.13"
@@ -1317,7 +1317,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     "fastq" "^1.6.0"
 
-"@panva/hkdf@^1.0.1":
+"@panva/hkdf@^1.0.2":
   "integrity" "sha512-MSAs9t3Go7GUkMhpKC44T58DJ5KGk2vBo+h1cqQeqlMfdGkxaVB78ZWpv9gYi/g2fa4sopag9gJsNvS8XGgWJA=="
   "resolved" "https://registry.npmjs.org/@panva/hkdf/-/hkdf-1.0.2.tgz"
   "version" "1.0.2"
@@ -2767,7 +2767,7 @@
   "resolved" "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz"
   "version" "2.0.0"
 
-"jose@^4.10.0", "jose@^4.9.3":
+"jose@^4.10.0", "jose@^4.11.4":
   "integrity" "sha512-94FdcR8felat4vaTJyL/WVdtlWLlsnLMZP8v+A0Vru18K3bQ22vn7TtpVh3JlgBFNIlYOUlGqwp/MjRPOnIyCQ=="
   "resolved" "https://registry.npmjs.org/jose/-/jose-4.11.4.tgz"
   "version" "4.11.4"
@@ -2933,16 +2933,16 @@
   "version" "1.4.0"
 
 "next-auth@^4", "next-auth@^4.19.2":
-  "integrity" "sha512-6V2YG3IJQVhgCAH7mvT3yopTW92gMdUrcwGX7NQ0dCreT/+axGua/JmVdarjec0C/oJukKpIYRgjMlV+L5ZQOQ=="
-  "resolved" "https://registry.npmjs.org/next-auth/-/next-auth-4.19.2.tgz"
-  "version" "4.19.2"
+  "integrity" "sha512-ZcTUN4qzzZ/zJYgOW0hMXccpheWtAol8QOMdMts+LYRcsPGsqf2hEityyaKyECQVw1cWInb9dF3wYwI5GZdEmQ=="
+  "resolved" "https://registry.npmjs.org/next-auth/-/next-auth-4.20.1.tgz"
+  "version" "4.20.1"
   dependencies:
-    "@babel/runtime" "^7.16.3"
-    "@panva/hkdf" "^1.0.1"
+    "@babel/runtime" "^7.20.13"
+    "@panva/hkdf" "^1.0.2"
     "cookie" "^0.5.0"
-    "jose" "^4.9.3"
+    "jose" "^4.11.4"
     "oauth" "^0.9.15"
-    "openid-client" "^5.1.0"
+    "openid-client" "^5.4.0"
     "preact" "^10.6.3"
     "preact-render-to-string" "^5.1.19"
     "uuid" "^8.3.2"
@@ -3076,7 +3076,7 @@
     "is-docker" "^2.1.1"
     "is-wsl" "^2.2.0"
 
-"openid-client@^5.1.0":
+"openid-client@^5.4.0":
   "integrity" "sha512-hgJa2aQKcM2hn3eyVtN12tEA45ECjTJPXCgUh5YzTzy9qwapCvmDTVPWOcWVL0d34zeQoQ/hbG9lJhl3AYxJlQ=="
   "resolved" "https://registry.npmjs.org/openid-client/-/openid-client-5.4.0.tgz"
   "version" "5.4.0"
@@ -3086,7 +3086,7 @@
     "object-hash" "^2.0.1"
     "oidc-token-hash" "^5.0.1"
 
-"optimism@^0.16.1":
+"optimism@^0.16.2":
   "integrity" "sha512-zWNbgWj+3vLEjZNIh/okkY2EUfX+vB9TJopzIZwT1xxaMqC5hRLLraePod4c5n4He08xuXNH+zhKFFCu390wiQ=="
   "resolved" "https://registry.npmjs.org/optimism/-/optimism-0.16.2.tgz"
   "version" "0.16.2"
